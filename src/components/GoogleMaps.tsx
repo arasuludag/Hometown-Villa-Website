@@ -11,8 +11,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 36.65182,
-  lng: 29.12187,
+  lat: 36.62,
+  lng: 29.15,
 };
 
 function MyComponent() {
@@ -24,7 +24,7 @@ function MyComponent() {
   });
 
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
       {markers.map((marker, index) => (
         <Marker
           position={marker.coordinates}

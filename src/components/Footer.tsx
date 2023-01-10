@@ -63,6 +63,8 @@ const SocialButton = ({
 };
 
 export default function SmallWithLogoLeft() {
+  const date = new Date();
+
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -78,7 +80,8 @@ export default function SmallWithLogoLeft() {
         align={{ base: "center", md: "center" }}
       >
         <Logo />
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>{`© ${date.getFullYear()} Hometown Villa. All rights reserved`}</Text>
+        <Text>Babadağ Cd. 10, 48300 Muğla, Fethiye / Türkiye</Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
