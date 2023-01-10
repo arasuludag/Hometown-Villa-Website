@@ -8,7 +8,7 @@ export default function AirBNBSection() {
     const script = document.createElement("script");
 
     script.src = "https://www.airbnb.com/embeddable/airbnb_jssdk";
-    script.async = true;
+    script.async = false;
 
     document.body.appendChild(script);
 

@@ -1,6 +1,5 @@
 import {
   Box,
-  chakra,
   Flex,
   Heading,
   SimpleGrid,
@@ -27,9 +26,10 @@ function StatsCard(props: StatsCardProps) {
       px={{ base: 2, md: 4 }}
       py={"5"}
       shadow={"xl"}
-      border={"1px solid"}
-      borderColor={useColorModeValue("gray.800", "gray.500")}
       rounded={"lg"}
+      maxWidth="400px"
+      width="100%"
+      margin="0 auto"
     >
       <Flex justifyContent={"space-between"}>
         <Box pl={{ base: 2, md: 4 }}>
@@ -61,7 +61,7 @@ export default function BasicStatistics() {
         fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
         margin="30px 0"
       >
-        <Text as={"span"} color={"orange.300"}>
+        <Text as={"span"} color={"#FC7F7C"}>
           {"Yamaç paraşütüyle ünlü "}
         </Text>
         <Text
@@ -75,14 +75,14 @@ export default function BasicStatistics() {
             position: "absolute",
             bottom: 1,
             left: 0,
-            bg: "orange.300",
+            bg: "#FC7F7C",
             zIndex: -1,
           }}
         >
           {"Babadağı yolu "}
         </Text>
         <br />
-        <Text as={"span"} color={"orange.300"}>
+        <Text as={"span"} color={"#FC7F7C"}>
           {"ve "}
         </Text>
         <Text
@@ -96,21 +96,17 @@ export default function BasicStatistics() {
             position: "absolute",
             bottom: 1,
             left: 0,
-            bg: "orange.300",
+            bg: "#FC7F7C",
             zIndex: -1,
           }}
         >
           Ölüdeniz caddesi
         </Text>
-        <Text as={"span"} color={"orange.300"}>
+        <Text as={"span"} color={"#FC7F7C"}>
           {" üzerinde"}
         </Text>
       </Heading>
-      <SimpleGrid
-        columns={{ base: 1, md: 3 }}
-        spacing={{ base: 5, lg: 8 }}
-        justifyContent="center"
-      >
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, lg: 10 }}>
         <StatsCard
           title={"Hisarönü Eğlence ve AVM"}
           stat={"1 km"}

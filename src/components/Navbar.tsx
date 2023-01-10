@@ -2,13 +2,14 @@ import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Link,
+  Image,
   Button,
   useColorModeValue,
   Stack,
   useColorMode,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import logo from "../assets/logo.png";
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -17,7 +18,7 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <Box>Logo</Box>
+          <Image src={logo} objectFit="scale-down" htmlWidth="200px" />
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>

@@ -12,8 +12,8 @@ import {
   createIcon,
   IconProps,
   useColorModeValue,
-  HStack,
   SimpleGrid,
+  Link,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
@@ -59,7 +59,7 @@ export default function CallToActionWithVideo() {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+            fontSize={{ base: "4xl", sm: "4xl", lg: "6xl" }}
           >
             <Text
               as={"span"}
@@ -72,14 +72,14 @@ export default function CallToActionWithVideo() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "orange.300",
+                bg: "#FC7F7C",
                 zIndex: -1,
               }}
             >
-              2023 yaz sezonuna
+              {`${new Date().getFullYear()} yaz sezonuna`}
             </Text>
             <br />
-            <Text as={"span"} color={"orange.300"}>
+            <Text as={"span"} color="#FC7F7C">
               hazır olan lüks villamızda
             </Text>
           </Heading>
@@ -130,28 +130,32 @@ export default function CallToActionWithVideo() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme="orange"
-              bg={"orange.300"}
-              _hover={{ bg: "orange.400" }}
-              leftIcon={<BsInstagram />}
-            >
-              Instagram
-            </Button>
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme="whatsapp"
-              leftIcon={<BsWhatsapp />}
-            >
-              WhatsApp
-            </Button>
+            <Link href="https://www.instagram.com/hometown.villa/" isExternal>
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
+                colorScheme="orange"
+                bg={"#FC7F7C"}
+                _hover={{ bg: "orange.400" }}
+                leftIcon={<BsInstagram />}
+              >
+                Instagram
+              </Button>
+            </Link>
+            <Link href="https://wa.me/905058011804" isExternal>
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
+                colorScheme="whatsapp"
+                leftIcon={<BsWhatsapp />}
+              >
+                WhatsApp
+              </Button>
+            </Link>
           </Stack>
         </Stack>
         <Flex
@@ -168,7 +172,7 @@ export default function CallToActionWithVideo() {
             top={"-20%"}
             left={0}
             zIndex={0}
-            color={useColorModeValue("orange.50", "orange.300")}
+            color={useColorModeValue("orange.50", "#FC7F7C")}
           />
           <Box
             position={"relative"}
