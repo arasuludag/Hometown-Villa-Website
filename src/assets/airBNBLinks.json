@@ -1,0 +1,18 @@
+[
+  {
+    "href": "https://www.airbnb.com/rooms/46185260",
+    "coordinates": {
+      "lat": 36.65182,
+      "lng": 29.12187
+    },
+    "title": "Test 1"
+  },
+  {
+    "href": "https://www.airbnb.com/rooms/29148269",
+    "coordinates": {
+      "lat": 36.75182,
+      "lng": 29.42187
+    },
+    "title": "Test 2"
+  }
+]

@@ -13,6 +13,7 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 export default function CallToActionWithVideo() {
   return (
@@ -40,18 +41,18 @@ export default function CallToActionWithVideo() {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "red.400",
+                bg: "orange.300",
                 zIndex: -1,
               }}
             >
               Lorem ipsum,
             </Text>
             <br />
-            <Text as={"span"} color={"red.400"}>
+            <Text as={"span"} color={"orange.300"}>
               dolor sit amet!
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
+          <Text color={"gray.400"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             eleifend ut augue et egestas. Nunc sit amet tellus orci. Aenean vel
             quam at turpis malesuada tincidunt ac at tellus. Maecenas vel magna
@@ -66,20 +67,22 @@ export default function CallToActionWithVideo() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              colorScheme="orange"
+              bg={"orange.300"}
+              _hover={{ bg: "orange.400" }}
+              leftIcon={<BsInstagram />}
             >
-              Lorem
+              Instagram
             </Button>
             <Button
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
+              colorScheme="whatsapp"
+              leftIcon={<BsWhatsapp />}
             >
-              ipsum
+              WhatsApp
             </Button>
           </Stack>
         </Stack>
@@ -97,7 +100,7 @@ export default function CallToActionWithVideo() {
             top={"-20%"}
             left={0}
             zIndex={0}
-            color={useColorModeValue("red.50", "red.400")}
+            color={useColorModeValue("orange.50", "orange.300")}
           />
           <Box
             position={"relative"}
