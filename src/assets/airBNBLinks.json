@@ -2,9 +2,17 @@
   {
     "href": "https://www.airbnb.com.tr/rooms/548463725618725413",
     "coordinates": {
-      "lat": 36.569798,
+      "lat": 36.569698,
       "lng": 29.146214
     },
     "title": "Hometown Villa Mendos"
+  },
+  {
+    "href": "https://www.airbnb.com/rooms/548471463332643106",
+    "coordinates": {
+      "lat": 36.569598,
+      "lng": 29.146214
+    },
+    "title": "Hometown Villa Babadağ"
   }
 ]

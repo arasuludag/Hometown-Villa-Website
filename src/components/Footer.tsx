@@ -24,7 +24,7 @@ export default function SmallWithLogoLeft() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Image src={logo} objectFit="scale-down" htmlWidth="200px" />
+        <Image src={logo} objectFit="scale-down" htmlWidth="200px" alt="Logo" />
         <Text>{`© ${new Date().getFullYear()} Hometown Villa. All rights reserved`}</Text>
         <Text>Babadağ Cd. 10, 48300 Muğla, Fethiye / Türkiye</Text>
       </Container>
