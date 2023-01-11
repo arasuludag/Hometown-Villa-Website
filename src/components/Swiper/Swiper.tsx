@@ -6,9 +6,13 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "./swiper.css";
 
+function getImageUrl(name: string) {
+  return new URL(`../../assets/photos/${name}.jpg`, import.meta.url).href;
+}
+
 let images: string[] = [];
 for (let i = 1; i < 11; i++) {
-  images.push("/photos/hometown" + i + ".jpg");
+  images.push(getImageUrl("hometown" + i));
 }
 
 // import required modules
