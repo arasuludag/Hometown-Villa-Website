@@ -42,7 +42,7 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
   );
 };
 
-export default function CallToActionWithVideo() {
+export default function CallToAction() {
   return (
     <Container maxW={"7xl"}>
       <Stack

@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import GoogleMaps from "./components/GoogleMaps";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Testimonials />
       <AirBNBSection />
       <GoogleMaps />
       <Footer />
