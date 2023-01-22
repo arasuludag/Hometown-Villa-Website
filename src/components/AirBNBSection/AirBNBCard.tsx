@@ -19,7 +19,7 @@ export default function ProductCard(props: { villa: villa }) {
   ).href;
 
   return (
-    <Center py={12}>
+    <Center py={16}>
       <Box
         role={"group"}
         p={6}

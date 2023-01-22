@@ -5,9 +5,11 @@ import villas from "../assets/villas.json";
 import googleMapsAPI from "../assets/GoogleMapsAPIKey.json";
 
 const containerStyle = {
-  width: "100%",
+  width: "90%",
   height: "600px",
-  margin: "0 auto",
+  margin: "30px auto",
+  borderRadius: "25px",
+  boxShadow: "rgba(100, 100, 111, 0.2) 0px 0px 30px 10px",
 };
 
 const center = {
