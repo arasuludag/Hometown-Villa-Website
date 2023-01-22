@@ -27,8 +27,8 @@ export default function Cards() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        {images.map((imageSRC) => (
-          <SwiperSlide>
+        {images.map((imageSRC, index) => (
+          <SwiperSlide key={index}>
             <img src={imageSRC} alt="Örnek fotoğraflar"></img>
           </SwiperSlide>
         ))}

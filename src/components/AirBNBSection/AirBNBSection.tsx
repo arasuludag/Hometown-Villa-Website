@@ -1,27 +1,13 @@
 import { Wrap, WrapItem } from "@chakra-ui/react";
 import AirBNBCard from "./AirBNBCard";
-import airBNBLinks from "../../assets/airBNBLinks.json";
-import { useEffect } from "react";
+import villas from "../../assets/villas.json";
 
 export default function AirBNBSection() {
-  useEffect(() => {
-    const script = document.createElement("script");
-
-    script.src = "https://www.airbnb.com/embeddable/airbnb_jssdk";
-    script.async = false;
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
-    <Wrap margin={"50px 0px"} spacing="30px" justify="center">
-      {airBNBLinks.map((link, index) => (
-        <WrapItem maxWidth="435px" width="100%" key={index}>
-          <AirBNBCard href={link.href} key={index} />
+    <Wrap margin={"50px 0px"} spacing="80px" justify="center">
+      {villas.map((villa, index) => (
+        <WrapItem key={index}>
+          <AirBNBCard villa={villa} />
         </WrapItem>
       ))}
     </Wrap>

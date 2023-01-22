@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import houseIcon from "../assets/houseIcon.png";
-import markers from "../assets/airBNBLinks.json";
+import villas from "../assets/villas.json";
 import googleMapsAPI from "../assets/GoogleMapsAPIKey.json";
 
 const containerStyle = {
@@ -25,12 +25,12 @@ function MyComponent() {
 
   return isLoaded ? (
     <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
-      {markers.map((marker, index) => (
+      {villas.map((villa, index) => (
         <Marker
-          position={marker.coordinates}
-          title={marker.title}
+          position={villa.coordinates}
+          title={villa.title}
           icon={houseIcon}
-          onClick={() => window.open(marker.href, "_blank")}
+          onClick={() => window.open(villa.href, "_blank")}
           key={index}
         />
       ))}
