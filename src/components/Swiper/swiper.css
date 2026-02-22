@@ -1,10 +1,10 @@
-.swiper {
+.mySwiper {
   max-width: 480px;
   width: 100%;
   max-height: 320px;
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
